@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A079D4BA257E96AE002D7B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4B9257E96AE002D7B6E /* AppDelegate.swift */; };
+		A079D4BC257E96AE002D7B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */; };
+		A079D4BE257E96AE002D7B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4BD257E96AE002D7B6E /* ViewController.swift */; };
+		A079D4C1257E96AE002D7B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079D4BF257E96AE002D7B6E /* Main.storyboard */; };
+		A079D4C4257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A079D4C2257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld */; };
+		A079D4C6257E96B1002D7B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A079D4C5257E96B1002D7B6E /* Assets.xcassets */; };
+		A079D4C9257E96B1002D7B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079D4C7257E96B1002D7B6E /* LaunchScreen.storyboard */; };
+		A079D4D4257E96B1002D7B6E /* CLC_CalmingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4D3257E96B1002D7B6E /* CLC_CalmingAppTests.swift */; };
+		A079D4DF257E96B1002D7B6E /* CLC_CalmingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4DE257E96B1002D7B6E /* CLC_CalmingAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A079D4D0257E96B1002D7B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A079D4AE257E96AE002D7B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A079D4B5257E96AE002D7B6E;
+			remoteInfo = CLC_CalmingApp;
+		};
+		A079D4DB257E96B1002D7B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A079D4AE257E96AE002D7B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A079D4B5257E96AE002D7B6E;
+			remoteInfo = CLC_CalmingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A079D4B6257E96AE002D7B6E /* CLC_CalmingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLC_CalmingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A079D4B9257E96AE002D7B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A079D4BD257E96AE002D7B6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A079D4C0257E96AE002D7B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A079D4C3257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLC_CalmingApp.xcdatamodel; sourceTree = "<group>"; };
+		A079D4C5257E96B1002D7B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A079D4C8257E96B1002D7B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A079D4CA257E96B1002D7B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A079D4CF257E96B1002D7B6E /* CLC_CalmingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLC_CalmingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A079D4D3257E96B1002D7B6E /* CLC_CalmingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLC_CalmingAppTests.swift; sourceTree = "<group>"; };
+		A079D4D5257E96B1002D7B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A079D4DA257E96B1002D7B6E /* CLC_CalmingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLC_CalmingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A079D4DE257E96B1002D7B6E /* CLC_CalmingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLC_CalmingAppUITests.swift; sourceTree = "<group>"; };
+		A079D4E0257E96B1002D7B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A079D4B3257E96AE002D7B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A079D4CC257E96B1002D7B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A079D4D7257E96B1002D7B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A079D4AD257E96AE002D7B6E = {
+			isa = PBXGroup;
+			children = (
+				A079D4B8257E96AE002D7B6E /* CLC_CalmingApp */,
+				A079D4D2257E96B1002D7B6E /* CLC_CalmingAppTests */,
+				A079D4DD257E96B1002D7B6E /* CLC_CalmingAppUITests */,
+				A079D4B7257E96AE002D7B6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A079D4B7257E96AE002D7B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A079D4B6257E96AE002D7B6E /* CLC_CalmingApp.app */,
+				A079D4CF257E96B1002D7B6E /* CLC_CalmingAppTests.xctest */,
+				A079D4DA257E96B1002D7B6E /* CLC_CalmingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A079D4B8257E96AE002D7B6E /* CLC_CalmingApp */ = {
+			isa = PBXGroup;
+			children = (
+				A079D4B9257E96AE002D7B6E /* AppDelegate.swift */,
+				A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */,
+				A079D4BD257E96AE002D7B6E /* ViewController.swift */,
+				A079D4BF257E96AE002D7B6E /* Main.storyboard */,
+				A079D4C5257E96B1002D7B6E /* Assets.xcassets */,
+				A079D4C7257E96B1002D7B6E /* LaunchScreen.storyboard */,
+				A079D4CA257E96B1002D7B6E /* Info.plist */,
+				A079D4C2257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld */,
+			);
+			path = CLC_CalmingApp;
+			sourceTree = "<group>";
+		};
+		A079D4D2257E96B1002D7B6E /* CLC_CalmingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A079D4D3257E96B1002D7B6E /* CLC_CalmingAppTests.swift */,
+				A079D4D5257E96B1002D7B6E /* Info.plist */,
+			);
+			path = CLC_CalmingAppTests;
+			sourceTree = "<group>";
+		};
+		A079D4DD257E96B1002D7B6E /* CLC_CalmingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A079D4DE257E96B1002D7B6E /* CLC_CalmingAppUITests.swift */,
+				A079D4E0257E96B1002D7B6E /* Info.plist */,
+			);
+			path = CLC_CalmingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A079D4B5257E96AE002D7B6E /* CLC_CalmingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A079D4E3257E96B1002D7B6E /* Build configuration list for PBXNativeTarget "CLC_CalmingApp" */;
+			buildPhases = (
+				A079D4B2257E96AE002D7B6E /* Sources */,
+				A079D4B3257E96AE002D7B6E /* Frameworks */,
+				A079D4B4257E96AE002D7B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLC_CalmingApp;
+			productName = CLC_CalmingApp;
+			productReference = A079D4B6257E96AE002D7B6E /* CLC_CalmingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A079D4CE257E96B1002D7B6E /* CLC_CalmingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A079D4E6257E96B1002D7B6E /* Build configuration list for PBXNativeTarget "CLC_CalmingAppTests" */;
+			buildPhases = (
+				A079D4CB257E96B1002D7B6E /* Sources */,
+				A079D4CC257E96B1002D7B6E /* Frameworks */,
+				A079D4CD257E96B1002D7B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A079D4D1257E96B1002D7B6E /* PBXTargetDependency */,
+			);
+			name = CLC_CalmingAppTests;
+			productName = CLC_CalmingAppTests;
+			productReference = A079D4CF257E96B1002D7B6E /* CLC_CalmingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A079D4D9257E96B1002D7B6E /* CLC_CalmingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A079D4E9257E96B1002D7B6E /* Build configuration list for PBXNativeTarget "CLC_CalmingAppUITests" */;
+			buildPhases = (
+				A079D4D6257E96B1002D7B6E /* Sources */,
+				A079D4D7257E96B1002D7B6E /* Frameworks */,
+				A079D4D8257E96B1002D7B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A079D4DC257E96B1002D7B6E /* PBXTargetDependency */,
+			);
+			name = CLC_CalmingAppUITests;
+			productName = CLC_CalmingAppUITests;
+			productReference = A079D4DA257E96B1002D7B6E /* CLC_CalmingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A079D4AE257E96AE002D7B6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = clc.hehn;
+				TargetAttributes = {
+					A079D4B5257E96AE002D7B6E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					A079D4CE257E96B1002D7B6E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = A079D4B5257E96AE002D7B6E;
+					};
+					A079D4D9257E96B1002D7B6E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = A079D4B5257E96AE002D7B6E;
+					};
+				};
+			};
+			buildConfigurationList = A079D4B1257E96AE002D7B6E /* Build configuration list for PBXProject "CLC_CalmingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A079D4AD257E96AE002D7B6E;
+			productRefGroup = A079D4B7257E96AE002D7B6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A079D4B5257E96AE002D7B6E /* CLC_CalmingApp */,
+				A079D4CE257E96B1002D7B6E /* CLC_CalmingAppTests */,
+				A079D4D9257E96B1002D7B6E /* CLC_CalmingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A079D4B4257E96AE002D7B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A079D4C9257E96B1002D7B6E /* LaunchScreen.storyboard in Resources */,
+				A079D4C6257E96B1002D7B6E /* Assets.xcassets in Resources */,
+				A079D4C1257E96AE002D7B6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A079D4CD257E96B1002D7B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A079D4D8257E96B1002D7B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A079D4B2257E96AE002D7B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A079D4C4257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld in Sources */,
+				A079D4BE257E96AE002D7B6E /* ViewController.swift in Sources */,
+				A079D4BA257E96AE002D7B6E /* AppDelegate.swift in Sources */,
+				A079D4BC257E96AE002D7B6E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A079D4CB257E96B1002D7B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A079D4D4257E96B1002D7B6E /* CLC_CalmingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A079D4D6257E96B1002D7B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A079D4DF257E96B1002D7B6E /* CLC_CalmingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A079D4D1257E96B1002D7B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A079D4B5257E96AE002D7B6E /* CLC_CalmingApp */;
+			targetProxy = A079D4D0257E96B1002D7B6E /* PBXContainerItemProxy */;
+		};
+		A079D4DC257E96B1002D7B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A079D4B5257E96AE002D7B6E /* CLC_CalmingApp */;
+			targetProxy = A079D4DB257E96B1002D7B6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A079D4BF257E96AE002D7B6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A079D4C0257E96AE002D7B6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A079D4C7257E96B1002D7B6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A079D4C8257E96B1002D7B6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A079D4E1257E96B1002D7B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A079D4E2257E96B1002D7B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A079D4E4257E96B1002D7B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UDGGVXZU5;
+				INFOPLIST_FILE = CLC_CalmingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CLC.CLC-CalmingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A079D4E5257E96B1002D7B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UDGGVXZU5;
+				INFOPLIST_FILE = CLC_CalmingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CLC.CLC-CalmingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A079D4E7257E96B1002D7B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UDGGVXZU5;
+				INFOPLIST_FILE = CLC_CalmingAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CLC.CLC-CalmingAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLC_CalmingApp.app/CLC_CalmingApp";
+			};
+			name = Debug;
+		};
+		A079D4E8257E96B1002D7B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UDGGVXZU5;
+				INFOPLIST_FILE = CLC_CalmingAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CLC.CLC-CalmingAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLC_CalmingApp.app/CLC_CalmingApp";
+			};
+			name = Release;
+		};
+		A079D4EA257E96B1002D7B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UDGGVXZU5;
+				INFOPLIST_FILE = CLC_CalmingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CLC.CLC-CalmingAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CLC_CalmingApp;
+			};
+			name = Debug;
+		};
+		A079D4EB257E96B1002D7B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UDGGVXZU5;
+				INFOPLIST_FILE = CLC_CalmingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CLC.CLC-CalmingAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CLC_CalmingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A079D4B1257E96AE002D7B6E /* Build configuration list for PBXProject "CLC_CalmingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079D4E1257E96B1002D7B6E /* Debug */,
+				A079D4E2257E96B1002D7B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A079D4E3257E96B1002D7B6E /* Build configuration list for PBXNativeTarget "CLC_CalmingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079D4E4257E96B1002D7B6E /* Debug */,
+				A079D4E5257E96B1002D7B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A079D4E6257E96B1002D7B6E /* Build configuration list for PBXNativeTarget "CLC_CalmingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079D4E7257E96B1002D7B6E /* Debug */,
+				A079D4E8257E96B1002D7B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A079D4E9257E96B1002D7B6E /* Build configuration list for PBXNativeTarget "CLC_CalmingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079D4EA257E96B1002D7B6E /* Debug */,
+				A079D4EB257E96B1002D7B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A079D4C2257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A079D4C3257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodel */,
+			);
+			currentVersion = A079D4C3257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodel */;
+			path = CLC_CalmingApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A079D4AE257E96AE002D7B6E /* Project object */;
+}
