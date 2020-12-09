@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A079D4BA257E96AE002D7B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4B9257E96AE002D7B6E /* AppDelegate.swift */; };
 		A079D4BC257E96AE002D7B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */; };
-		A079D4BE257E96AE002D7B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4BD257E96AE002D7B6E /* ViewController.swift */; };
 		A079D4C1257E96AE002D7B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079D4BF257E96AE002D7B6E /* Main.storyboard */; };
 		A079D4C4257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A079D4C2257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld */; };
 		A079D4C6257E96B1002D7B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A079D4C5257E96B1002D7B6E /* Assets.xcassets */; };
@@ -17,6 +16,9 @@
 		A079D4D4257E96B1002D7B6E /* CLC_CalmingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4D3257E96B1002D7B6E /* CLC_CalmingAppTests.swift */; };
 		A079D4DF257E96B1002D7B6E /* CLC_CalmingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4DE257E96B1002D7B6E /* CLC_CalmingAppUITests.swift */; };
 		A0C940992581130F00EE0B60 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C940982581130F00EE0B60 /* Session.swift */; };
+		A0C940A1258166E200EE0B60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C940A0258166E200EE0B60 /* HomeViewController.swift */; };
+		A0C940A3258166EB00EE0B60 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C940A2258166EB00EE0B60 /* SessionViewController.swift */; };
+		A0C940A5258166F000EE0B60 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C940A4258166F000EE0B60 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		A079D4B6257E96AE002D7B6E /* CLC_CalmingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLC_CalmingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A079D4B9257E96AE002D7B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A079D4BD257E96AE002D7B6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A079D4C0257E96AE002D7B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A079D4C3257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLC_CalmingApp.xcdatamodel; sourceTree = "<group>"; };
 		A079D4C5257E96B1002D7B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		A079D4DE257E96B1002D7B6E /* CLC_CalmingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLC_CalmingAppUITests.swift; sourceTree = "<group>"; };
 		A079D4E0257E96B1002D7B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C940982581130F00EE0B60 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		A0C940A0258166E200EE0B60 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A0C940A2258166EB00EE0B60 /* SessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		A0C940A4258166F000EE0B60 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +109,12 @@
 			children = (
 				A079D4B9257E96AE002D7B6E /* AppDelegate.swift */,
 				A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */,
-				A079D4BD257E96AE002D7B6E /* ViewController.swift */,
 				A079D4BF257E96AE002D7B6E /* Main.storyboard */,
-				A0C940982581130F00EE0B60 /* Session.swift */,
+				A0C940A0258166E200EE0B60 /* HomeViewController.swift */,
+				A0C940A4258166F000EE0B60 /* TableViewController.swift */,
+				A0C940A2258166EB00EE0B60 /* SessionViewController.swift */,
 				A079D4C5257E96B1002D7B6E /* Assets.xcassets */,
+				A0C940982581130F00EE0B60 /* Session.swift */,
 				A079D4C7257E96B1002D7B6E /* LaunchScreen.storyboard */,
 				A079D4CA257E96B1002D7B6E /* Info.plist */,
 				A079D4C2257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld */,
@@ -267,9 +273,11 @@
 			files = (
 				A0C940992581130F00EE0B60 /* Session.swift in Sources */,
 				A079D4C4257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld in Sources */,
-				A079D4BE257E96AE002D7B6E /* ViewController.swift in Sources */,
+				A0C940A5258166F000EE0B60 /* TableViewController.swift in Sources */,
 				A079D4BA257E96AE002D7B6E /* AppDelegate.swift in Sources */,
 				A079D4BC257E96AE002D7B6E /* SceneDelegate.swift in Sources */,
+				A0C940A3258166EB00EE0B60 /* SessionViewController.swift in Sources */,
+				A0C940A1258166E200EE0B60 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
