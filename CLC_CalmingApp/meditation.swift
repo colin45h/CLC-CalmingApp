@@ -1,5 +1,5 @@
 //
-//  meditation.swift
+//  Meditation.swift
 //  CLC_CalmingApp
 //
 //  Created by Tiger Coder on 12/9/20.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-class meditation {
+class Meditation {
     
     var timeSpent : String
     var date : String
     
-    init(timeGo : String, dateGo : String){
+    init(timeSpent : String, date : String) {
         
-        timeSpent = timeGo
-        date = dateGo
+        self.timeSpent = timeSpent
+        self.date = date
     }
     
 }
