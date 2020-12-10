@@ -12,24 +12,19 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var timePicker: UIDatePicker!
     
-    var timerDuration: Double = 0.0
-    lazy var session = Session(timerDuration: timerDuration) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    func viewDidAppear() {
+        timePicker.countDownDuration = 300
+    }
 
     // User Functionality
     @IBAction func startSession(_ sender: UIButton) {
-        
-        timerDuration = timePicker.countDownDuration
-        
         performSegue(withIdentifier: "sessionStart", sender: nil)
     }
-    
     
     
     // Segue Functions + Changing View
@@ -37,7 +32,7 @@ class HomeViewController: UIViewController {
         
         if segue.identifier == "sessionStart" {
             let nvc = segue.destination as! SessionViewController
-            nvc.currentSession  = session
+            nvc.timerDuration = timePicker.countDownDuration
         }
     }
     

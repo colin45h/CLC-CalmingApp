@@ -15,13 +15,17 @@ protocol FinishSessionDelegate: AnyObject {
 class SessionViewController: UIViewController {
     
     var delegate: FinishSessionDelegate? = nil
-    var currentSession: Session!
+    var timerDuration: Double!
 
     @IBOutlet weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    @IBAction func startSession(_ sender: UIButton) {
+        
     }
     
     @IBAction func finishSession(_ sender: UIButton) {

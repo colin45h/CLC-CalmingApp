@@ -13,6 +13,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var sessionView: UITableView!
     
     var sessionList = [FinishedSession]()
+    var defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // Background Functions
     func stringFromDate(_ date: Date) -> String {
         let format = DateFormatter()
-        format.dateFormat = "dd MMM yyyy HH:mm"
+        format.dateFormat = "MMM/dd/yyyy"
         return format.string(from: date)
     }
     
