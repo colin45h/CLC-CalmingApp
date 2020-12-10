@@ -15,52 +15,64 @@ enum SessionError: Error {
 struct FinishedSession {
     var date: Date;
     var duration: Double;
+    var endedManually: Bool;
 }
 
 class Session {
     var timerDuration: Double;
-    var onSessionEnd: () -> Void;
-    var date: Date?;
-    var finalDuration: Double?;
+    var timerDoneListener: () -> Void;
     var timer: Timer?;
+    // The following three will be used in getFinishedSession
+    var startTime: Date?;
+    var finalDuration: Double?;
+    var endedManually: Bool?;
 
-    init(timerDuration: Double, selector: @escaping () -> Void) {
+    init(timerDuration: Double, timerDoneListener: @escaping () -> Void) {
         self.timerDuration = timerDuration;
-        onSessionEnd = selector;
-        date = nil;
+        self.timerDoneListener = timerDoneListener;
+        startTime = nil;
         timer = nil;
     }
 
     func start() {
-        timer = Timer(timeInterval: TimeInterval(timerDuration),
+        timer = Timer(timeInterval: timerDuration,
                 target: self,
-                selector: #selector(sessionOver),
+                selector: #selector(onTimerDone),
                 userInfo: nil,
                 repeats: false);
-        date = Date();
+        startTime = Date();
     }
 
     func end() throws {
         timer?.invalidate();
-        if date != nil {
-            try sessionOver();
+        endedManually = true;
+        if startTime != nil {
+            calculateDuration();
         } else {
             throw SessionError.invalidState("end method called before start method");
         }
     }
 
-    @objc func sessionOver() throws {
-        if let date = date {
+    @objc func onTimerDone() {
+        endedManually = false;
+        calculateDuration();
+        timerDoneListener();
+    }
+
+    private func calculateDuration() {
+        if let date = startTime {
             finalDuration = Date().timeIntervalSince(date);
-            onSessionEnd();
         } else {
-            throw SessionError.invalidState("timerDone method called before start method");
+            // This should never happen because it is checked for in end()
+            // and won't be called automatically unless start() is called
+
+            // throw SessionError.invalidState("calculateDuration method called before start method");
         }
     }
 
     func getFinishedSession() throws -> FinishedSession {
-        if date != nil && finalDuration != nil {
-            return FinishedSession(date: date!, duration: finalDuration!);
+        if startTime != nil && finalDuration != nil && endedManually != nil {
+            return FinishedSession(date: startTime!, duration: finalDuration!, endedManually: endedManually!);
         } else {
             throw SessionError.invalidState("getFinishedSession method called before session ended");
         }

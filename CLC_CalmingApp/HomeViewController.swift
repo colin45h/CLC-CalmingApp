@@ -31,8 +31,8 @@ class HomeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "sessionStart" {
-            let nvc = segue.destination as! SessionViewController
-            nvc.timerDuration = timePicker.countDownDuration
+            let sessionViewController = segue.destination as! SessionViewController
+            sessionViewController.timerDuration = timePicker.countDownDuration
         }
     }
     
