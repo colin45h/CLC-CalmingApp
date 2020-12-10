@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FinishSessionDelegate {
+class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var sessionView: UITableView!
     
@@ -17,9 +17,21 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        sessionView.delegate = self
+        sessionView.dataSource = self
+        
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if let sesh = defaults.object(forKey: "daList") as? Data {
+            sessionList = try! PropertyListDecoder().decode(Array<FinishedSession>.self, from: sesh)
+        }
+        
+        sessionView.reloadData()
+    }
+    
     // Table View Functions
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sessionList.count
@@ -27,7 +39,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = sessionView.dequeueReusableCell(withIdentifier: "session")!
-        cell.textLabel?.text = stringFromDate(sessionList[indexPath.row].date) 
+        cell.textLabel?.text = stringFromDate(sessionList[indexPath.row].date)
         return cell
     }
     
@@ -37,9 +49,5 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let format = DateFormatter()
         format.dateFormat = "MMM/dd/yyyy"
         return format.string(from: date)
-    }
-    
-    func finishedSessionPass(info: FinishedSession) {
-        sessionList.append(info)
     }
 }

@@ -9,18 +9,24 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var timePicker: UIDatePicker!
+    var defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if defaults.object(forKey: "daList") != nil {
+        }
+        else {
+            defaults.set([FinishedSession](), forKey: "daList")
+        }
     }
     
     func viewDidAppear() {
         timePicker.countDownDuration = 300
     }
-
+    
     // User Functionality
     @IBAction func startSession(_ sender: UIButton) {
         performSegue(withIdentifier: "sessionStart", sender: nil)

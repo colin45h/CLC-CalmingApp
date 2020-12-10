@@ -8,13 +8,8 @@
 
 import UIKit
 
-protocol FinishSessionDelegate: AnyObject {
-    func finishedSessionPass(info: FinishedSession)
-}
-
 class SessionViewController: UIViewController {
     
-    var delegate: FinishSessionDelegate? = nil
     var timerDuration: Double!
     var session: Session?
 
@@ -34,16 +29,24 @@ class SessionViewController: UIViewController {
     @IBAction func finishSession(_ sender: UIButton) {
         // this method throws because end mustn't be called before start
         try! session?.end()
+        doSegue()
     }
 
     // Called when timer finished but not when finished button pressed
     func onTimerDone() {
-
+        doSegue()
     }
 
     func doSegue() {
-        // getFinishedSession throws because it can't get a finished session is if session was never finished
-        try! delegate?.finishedSessionPass(info: (session?.getFinishedSession())!)
-        performSegue(withIdentifier: "finishedSession", sender: self)
+        // save throws because it can't get a finished session if session was never finished
+        
+        let userFinished = UIAlertController(title: "Finished!", message: "You finished your session!", preferredStyle: .alert)
+        userFinished.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            try! self.session?.save()
+            self.performSegue(withIdentifier: "finishedSession", sender: self)
+        }))
+            
+        present(userFinished, animated: true)
+        
     }
 }
