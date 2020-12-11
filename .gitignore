@@ -84,5 +84,6 @@ fastlane/test_output
 
 # Cool Stuff
 .idea/
+.DS_Store
 
 iOSInjectionProject/
