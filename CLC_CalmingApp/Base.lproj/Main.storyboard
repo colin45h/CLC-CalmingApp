@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aquatico-Regular.otf">
+            <string>Aquatico-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="nmR-uT-B77">
@@ -20,7 +25,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditating Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkc-W9-ZDH">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="256.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="32"/>
                                         <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -29,7 +34,7 @@
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwP-7X-BQx">
                                         <rect key="frame" x="0.0" y="512.5" width="414" height="256.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="37"/>
                                         <state key="normal" title="Start A Session">
                                             <color key="titleColor" red="0.81008112580000002" green="0.67010244529999996" blue="0.96012469180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -72,7 +77,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COQ-iq-csa">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="60"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.81008112580000002" green="0.67010244529999996" blue="0.96012469180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -88,7 +93,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20f-m0-ihh">
                                         <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="60"/>
                                         <state key="normal" title="Finish">
                                             <color key="titleColor" red="0.81008112580000002" green="0.67010244529999996" blue="0.96012469180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
