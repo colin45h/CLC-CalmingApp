@@ -133,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GIE-Kw-VS4">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="119" width="414" height="694"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="session" textLabel="bd0-lq-1vA" detailTextLabel="OyB-ZO-ean" imageView="KCa-gb-Lt3" style="IBUITableViewCellStyleValue1" id="ThW-ew-BBE">
@@ -167,13 +167,22 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past Sessions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p30-Fy-ChD">
+                                <rect key="frame" x="0.0" y="59" width="414" height="46"/>
+                                <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="38"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="leading" secondItem="Rxa-4d-0RM" secondAttribute="leading" id="GlB-rJ-4rL"/>
-                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="trailing" secondItem="Rxa-4d-0RM" secondAttribute="trailing" id="NOQ-Sp-OqQ"/>
-                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="top" secondItem="Rxa-4d-0RM" secondAttribute="top" id="eHQ-be-pd4"/>
-                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="bottom" secondItem="Rxa-4d-0RM" secondAttribute="bottom" id="zkW-Mx-lkc"/>
+                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="bottom" secondItem="Rxa-4d-0RM" secondAttribute="bottom" id="Ddf-Pn-eAa"/>
+                            <constraint firstItem="p30-Fy-ChD" firstAttribute="trailing" secondItem="Rxa-4d-0RM" secondAttribute="trailing" id="KDK-ZY-H9T"/>
+                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="trailing" secondItem="Rxa-4d-0RM" secondAttribute="trailing" id="ToU-J3-1Ss"/>
+                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="top" secondItem="Rxa-4d-0RM" secondAttribute="top" constant="75" id="Uny-UY-wvF"/>
+                            <constraint firstItem="p30-Fy-ChD" firstAttribute="top" secondItem="Rxa-4d-0RM" secondAttribute="top" constant="15" id="VPp-pY-nN4"/>
+                            <constraint firstItem="GIE-Kw-VS4" firstAttribute="leading" secondItem="Rxa-4d-0RM" secondAttribute="leading" id="qFu-hT-nku"/>
+                            <constraint firstItem="p30-Fy-ChD" firstAttribute="leading" secondItem="Rxa-4d-0RM" secondAttribute="leading" id="xH3-zQ-jfn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rxa-4d-0RM"/>
                     </view>
