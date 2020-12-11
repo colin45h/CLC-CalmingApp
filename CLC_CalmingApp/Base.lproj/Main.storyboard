@@ -15,25 +15,25 @@
         <!--Home View Controller-->
         <scene sceneID="nmR-uT-B77">
             <objects>
-                <viewController id="uJT-Nw-eqI" customClass="HomeViewController" customModule="CLC_CalmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="uJT-Nw-eqI" customClass="HomeViewController" customModule="CLC_CalmingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WeJ-Ww-obR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="H5a-o6-cD3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditating Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkc-W9-ZDH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="256.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                                         <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="32"/>
                                         <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="300" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJy-Uy-BUD">
-                                        <rect key="frame" x="0.0" y="256.5" width="414" height="256"/>
+                                        <rect key="frame" x="0.0" y="241.5" width="414" height="242"/>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwP-7X-BQx">
-                                        <rect key="frame" x="0.0" y="512.5" width="414" height="256.5"/>
+                                        <rect key="frame" x="0.0" y="483.5" width="414" height="241.5"/>
                                         <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="37"/>
                                         <state key="normal" title="Start A Session">
                                             <color key="titleColor" red="0.81008112580000002" green="0.67010244529999996" blue="0.96012469180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -55,6 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="7hU-hn-35g"/>
                     </view>
                     <tabBarItem key="tabBarItem" selectedImage="square.and.pencil" catalog="system" systemItem="featured" id="wcp-8d-B7D"/>
+                    <navigationItem key="navigationItem" id="UZS-eP-spM"/>
                     <connections>
                         <outlet property="timePicker" destination="eJy-Uy-BUD" id="LGi-y2-eyc"/>
                         <segue destination="xlQ-G2-Btq" kind="show" identifier="sessionStart" id="0Gs-91-PQw"/>
@@ -62,21 +63,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paT-my-jHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1797.1014492753625" y="-20.089285714285712"/>
+            <point key="canvasLocation" x="-2620" y="711"/>
         </scene>
         <!--Session View Controller-->
         <scene sceneID="6cn-nB-oqg">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="xlQ-G2-Btq" customClass="SessionViewController" customModule="CLC_CalmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="xlQ-G2-Btq" customClass="SessionViewController" customModule="CLC_CalmingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gw8-0m-grr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YdO-zm-3xG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COQ-iq-csa">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
                                         <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="60"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.81008112580000002" green="0.67010244529999996" blue="0.96012469180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -86,13 +87,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Time Left in Session)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISg-ke-Mqb">
-                                        <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
+                                        <rect key="frame" x="0.0" y="258" width="414" height="258"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20f-m0-ihh">
-                                        <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
+                                        <rect key="frame" x="0.0" y="516" width="414" height="258"/>
                                         <fontDescription key="fontDescription" name="Aquatico-Regular" family="Aquatico" pointSize="60"/>
                                         <state key="normal" title="Finish">
                                             <color key="titleColor" red="0.81008112580000002" green="0.67010244529999996" blue="0.96012469180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -122,7 +123,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5es-wS-bsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Fwt-Fj-jUG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2212" y="706"/>
+            <point key="canvasLocation" x="-1623" y="710"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eke-FG-HBH">
+            <objects>
+                <navigationController modalTransitionStyle="crossDissolve" id="FVy-fd-fvi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="Ocs-vk-ykB"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Og-lB-blf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uJT-Nw-eqI" kind="relationship" relationship="rootViewController" id="E5I-Wn-hpx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hP-8U-fUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1891" y="-20"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="eqT-mg-FJ5">
@@ -195,6 +213,38 @@
             </objects>
             <point key="canvasLocation" x="-828.98550724637687" y="-20.089285714285712"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="N1R-gq-KUQ">
+            <objects>
+                <viewController id="sJt-mn-bmp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPE-tT-WpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GXz-XM-2Kn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="Zlk-SK-DHG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jPx-hb-8p9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="-20"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4xA-Q5-TBa">
+            <objects>
+                <viewController id="ozf-N9-jnS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lx8-Ts-EHy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wFB-gD-MS0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Ed3-Uj-Ypa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APq-9B-Xg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="-20"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="a67-xB-8Wi">
             <objects>
@@ -207,8 +257,10 @@
                         <color key="selectedImageTintColor" red="0.81008112580000002" green="0.67010244529999996" blue="0.96012469180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="uJT-Nw-eqI" kind="relationship" relationship="viewControllers" id="nYj-ps-dwF"/>
-                        <segue destination="wZB-c4-6zp" kind="relationship" relationship="viewControllers" id="Mxa-8c-uyE"/>
+                        <segue destination="FVy-fd-fvi" kind="relationship" relationship="viewControllers" id="KxE-fI-3dY"/>
+                        <segue destination="wZB-c4-6zp" kind="relationship" relationship="viewControllers" id="3zj-q2-g5j"/>
+                        <segue destination="sJt-mn-bmp" kind="relationship" relationship="viewControllers" id="Xrx-lk-mLl"/>
+                        <segue destination="ozf-N9-jnS" kind="relationship" relationship="viewControllers" id="Uzj-ST-Pep"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jt-9e-n51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,8 @@ class SessionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         session = Session(timerDuration: timerDuration, timerDoneListener: onTimerDone)
+        
+        navigationController?.hidesBarsOnTap = true
     }
 
     // Called when start button pressed

@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
         else {
             defaults.set([FinishedSession](), forKey: "daList")
         }
+        
+        
     }
     
     func viewDidAppear() {
