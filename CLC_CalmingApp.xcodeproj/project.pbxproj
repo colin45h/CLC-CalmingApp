@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0005D51258A771500F63F60 /* SwiftyDropbox in Frameworks */ = {isa = PBXBuildFile; productRef = A0005D50258A771500F63F60 /* SwiftyDropbox */; };
+		A0005D5A258A890600F63F60 /* ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0005D55258A890600F63F60 /* ocean.mp3 */; };
+		A0005D5B258A890600F63F60 /* lofi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0005D56258A890600F63F60 /* lofi.mp3 */; };
+		A0005D5C258A890600F63F60 /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0005D57258A890600F63F60 /* forest.mp3 */; };
+		A0005D5D258A890600F63F60 /* city.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0005D58258A890600F63F60 /* city.mp3 */; };
+		A0005D5E258A890600F63F60 /* codefi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0005D59258A890600F63F60 /* codefi.mp3 */; };
 		A079D4BA257E96AE002D7B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4B9257E96AE002D7B6E /* AppDelegate.swift */; };
 		A079D4BC257E96AE002D7B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */; };
 		A079D4C1257E96AE002D7B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079D4BF257E96AE002D7B6E /* Main.storyboard */; };
@@ -42,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0005D55258A890600F63F60 /* ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ocean.mp3; sourceTree = "<group>"; };
+		A0005D56258A890600F63F60 /* lofi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lofi.mp3; sourceTree = "<group>"; };
+		A0005D57258A890600F63F60 /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
+		A0005D58258A890600F63F60 /* city.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = city.mp3; sourceTree = "<group>"; };
+		A0005D59258A890600F63F60 /* codefi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = codefi.mp3; sourceTree = "<group>"; };
 		A079D4B6257E96AE002D7B6E /* CLC_CalmingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLC_CalmingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A079D4B9257E96AE002D7B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A079D4BB257E96AE002D7B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0005D51258A771500F63F60 /* SwiftyDropbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +98,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0005D54258A890600F63F60 /* AppMusic */ = {
+			isa = PBXGroup;
+			children = (
+				A0005D55258A890600F63F60 /* ocean.mp3 */,
+				A0005D56258A890600F63F60 /* lofi.mp3 */,
+				A0005D57258A890600F63F60 /* forest.mp3 */,
+				A0005D58258A890600F63F60 /* city.mp3 */,
+				A0005D59258A890600F63F60 /* codefi.mp3 */,
+			);
+			path = AppMusic;
+			sourceTree = "<group>";
+		};
 		A079D4AD257E96AE002D7B6E = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +145,7 @@
 				A079D4C7257E96B1002D7B6E /* LaunchScreen.storyboard */,
 				A079D4CA257E96B1002D7B6E /* Info.plist */,
 				A079D4C2257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld */,
+				A0005D54258A890600F63F60 /* AppMusic */,
 				F3F6BA10FCB5A5CF45168DF1 /* Fonts */,
 			);
 			path = CLC_CalmingApp;
@@ -173,7 +194,6 @@
 			);
 			name = CLC_CalmingApp;
 			packageProductDependencies = (
-				A0005D50258A771500F63F60 /* SwiftyDropbox */,
 			);
 			productName = CLC_CalmingApp;
 			productReference = A079D4B6257E96AE002D7B6E /* CLC_CalmingApp.app */;
@@ -221,6 +241,9 @@
 		A079D4AE257E96AE002D7B6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = clc.hehn;
@@ -248,7 +271,6 @@
 			);
 			mainGroup = A079D4AD257E96AE002D7B6E;
 			packageReferences = (
-				A0005D4F258A771500F63F60 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */,
 			);
 			productRefGroup = A079D4B7257E96AE002D7B6E /* Products */;
 			projectDirPath = "";
@@ -268,8 +290,13 @@
 			files = (
 				A079D4C9257E96B1002D7B6E /* LaunchScreen.storyboard in Resources */,
 				A079D4C6257E96B1002D7B6E /* Assets.xcassets in Resources */,
+				A0005D5B258A890600F63F60 /* lofi.mp3 in Resources */,
+				A0005D5A258A890600F63F60 /* ocean.mp3 in Resources */,
+				A0005D5E258A890600F63F60 /* codefi.mp3 in Resources */,
 				A079D4C1257E96AE002D7B6E /* Main.storyboard in Resources */,
 				F3F6B7152998D19461F14F56 /* Aquatico-Regular.otf in Resources */,
+				A0005D5C258A890600F63F60 /* forest.mp3 in Resources */,
+				A0005D5D258A890600F63F60 /* city.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,25 +657,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A0005D4F258A771500F63F60 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dropbox/SwiftyDropbox.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A0005D50258A771500F63F60 /* SwiftyDropbox */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A0005D4F258A771500F63F60 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */;
-			productName = SwiftyDropbox;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A079D4C2257E96AE002D7B6E /* CLC_CalmingApp.xcdatamodeld */ = {

@@ -116,6 +116,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="GSq-x3-mUq"/>
                     <connections>
+                        <outlet property="finishButton" destination="20f-m0-ihh" id="TOQ-tF-mmN"/>
+                        <outlet property="startButton" destination="COQ-iq-csa" id="Cvg-gH-N0I"/>
                         <outlet property="timeLabel" destination="ISg-ke-Mqb" id="6GJ-Up-Ol6"/>
                         <segue destination="Fwt-Fj-jUG" kind="unwind" identifier="finishedSession" unwindAction="unwindWithSender:" id="S8z-nv-Efv"/>
                     </connections>
