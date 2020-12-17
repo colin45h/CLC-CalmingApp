@@ -16,14 +16,15 @@ class SessionViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var finishButton: UIButton!
-    
     @IBOutlet weak var timeLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         session = Session(timerDuration: timerDuration, timerDoneListener: onTimerDone)
         
         finishButton.isHidden = true
+        timeLabel.isHidden = true
         
         navigationController?.isNavigationBarHidden = true
         
@@ -34,6 +35,8 @@ class SessionViewController: UIViewController {
         session?.start()
         startButton.isHidden = true
         finishButton.isHidden = false
+        timeLabel.isHidden = false
+        
     }
     
     // Called when finish button pressed
