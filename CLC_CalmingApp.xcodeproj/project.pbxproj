@@ -25,6 +25,7 @@
 		A0C940A3258166EB00EE0B60 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C940A2258166EB00EE0B60 /* SessionViewController.swift */; };
 		A0C940A5258166F000EE0B60 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C940A4258166F000EE0B60 /* TableViewController.swift */; };
 		A0D89EAA258953E20067B321 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89EA9258953E20067B321 /* SettingsViewController.swift */; };
+		A0D89EAE258A93640067B321 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89EAD258A93640067B321 /* StatsViewController.swift */; };
 		F3F6B7152998D19461F14F56 /* Aquatico-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3F6B78409F11281B0AC1082 /* Aquatico-Regular.otf */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		A0C940A2258166EB00EE0B60 /* SessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		A0C940A4258166F000EE0B60 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A0D89EA9258953E20067B321 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A0D89EAD258A93640067B321 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		F3F6B78409F11281B0AC1082 /* Aquatico-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file.otf; path = "Aquatico-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 				A0C940A4258166F000EE0B60 /* TableViewController.swift */,
 				A0C940A2258166EB00EE0B60 /* SessionViewController.swift */,
 				A0D89EA9258953E20067B321 /* SettingsViewController.swift */,
+				A0D89EAD258A93640067B321 /* StatsViewController.swift */,
 				A079D4C5257E96B1002D7B6E /* Assets.xcassets */,
 				A0C940982581130F00EE0B60 /* Session.swift */,
 				A079D4C7257E96B1002D7B6E /* LaunchScreen.storyboard */,
@@ -328,6 +331,7 @@
 				A079D4BC257E96AE002D7B6E /* SceneDelegate.swift in Sources */,
 				A0C940A3258166EB00EE0B60 /* SessionViewController.swift in Sources */,
 				A0C940A1258166E200EE0B60 /* HomeViewController.swift in Sources */,
+				A0D89EAE258A93640067B321 /* StatsViewController.swift in Sources */,
 				A0D89EAA258953E20067B321 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
