@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var timePicker: UIDatePicker!
+    @IBOutlet weak var tealBackground: UIImageView!
     var defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -22,6 +23,7 @@ class HomeViewController: UIViewController {
             defaults.set([FinishedSession](), forKey: "daList")
         }
         
+        tealBackground.frame = UIScreen.main.nativeBounds
         
     }
     

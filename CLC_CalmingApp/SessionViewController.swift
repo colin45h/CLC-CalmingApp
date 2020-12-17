@@ -14,9 +14,13 @@ class SessionViewController: UIViewController {
     var timerDuration: Double!
     var session: Session?
     
+    var count: Int = 0
+    var continuar = true
+    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var finishButton: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var purpleBackground: UIImageView!
     
     
     override func viewDidLoad() {
@@ -28,6 +32,7 @@ class SessionViewController: UIViewController {
         
         navigationController?.isNavigationBarHidden = true
         
+        count = Int(timerDuration)
     }
     
     // Called when start button pressed
@@ -37,12 +42,24 @@ class SessionViewController: UIViewController {
         finishButton.isHidden = false
         timeLabel.isHidden = false
         
+        timeLabel.text = timeFormatted(count)
+        
+        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+    }
+
+    @objc func update() {
+        if(count > 0 && continuar == true) {
+            timeLabel.text = timeFormatted(count)
+            count = count - 1
+        }
     }
     
     // Called when finish button pressed
     @IBAction func finishSession(_ sender: UIButton) {
         // this method throws because end mustn't be called before start
         try! session?.end()
+        
+        continuar = false
         doSegue()
     }
     
@@ -63,5 +80,11 @@ class SessionViewController: UIViewController {
         
         present(userFinished, animated: true)
         
+    }
+    
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        return String(format: "%02d:%02d", minutes, seconds)
     }
 }

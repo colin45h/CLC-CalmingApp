@@ -53,7 +53,7 @@ class StatsViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         
         stats[0].value = String(sessionList.count)
-        stats[1].value = String(Int(totalDuration))
-        stats[2].value = String(Int(totalDuration / Double(sessionList.count)))
+        stats[1].value = String(Int(totalDuration)) + " seconds"
+        stats[2].value = String(Int(totalDuration / Double(sessionList.count))) + " seconds"
     }
 }
